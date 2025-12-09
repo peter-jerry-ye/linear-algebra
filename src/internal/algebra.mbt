@@ -5,7 +5,7 @@ pub trait HomomorphismNat {
 
 ///|
 pub impl HomomorphismNat for Float with from_nat(n : Int) -> Float {
-  n.to_float()
+  Float::from_int(n)
 }
 
 ///|

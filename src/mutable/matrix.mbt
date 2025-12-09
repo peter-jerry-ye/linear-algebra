@@ -196,7 +196,7 @@ pub fn[T, U] Matrix::map(self : Matrix[T], f : (T) -> U) -> Matrix[U] {
 /// ```
 ///
 pub fn[T] Matrix::map_inplace(self : Matrix[T], f : (T) -> T) -> Unit {
-  self.data.map_inplace(f)
+  self.data.map_in_place(f)
 }
 
 ///|
@@ -1725,7 +1725,7 @@ pub impl SMul for Double with scalar(self, rhs : Double) -> Double {
 
 ///|
 pub impl SMul for Float with scalar(self, rhs : Double) -> Float {
-  self * rhs.to_float()
+  self * Float::from_double(rhs)
 }
 
 ///|
