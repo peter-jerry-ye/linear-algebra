@@ -58,9 +58,9 @@ test "map_function" {
 /// ```moonbit
 /// test {
 ///   let m = Matrix::from_2d_array([[2, 3, 4], [1, 2, 3]])
-///   inspect(m[0][1], content="3")  // Read element at row 0, column 1
-///   m[0][1] = 4                    // Modify element at row 0, column 1
-///   inspect(m[0][1], content="4")  // Verify the modification
+///   inspect(m[0][1], content="3") // Read element at row 0, column 1
+///   m[0][1] = 4 // Modify element at row 0, column 1
+///   inspect(m[0][1], content="4") // Verify the modification
 /// }
 /// ```
 ///
@@ -142,6 +142,7 @@ test "swap" {
 ///   [1.0, 1.0, 1.0, 2.0],
 ///   [2.0, 3.0, 3.0, 5.0],
 /// ])
+///
 /// let result = m.reduce_row_elimination()
 /// // result should be in reduced row echelon form:
 /// // |1, 0, 0, 1|

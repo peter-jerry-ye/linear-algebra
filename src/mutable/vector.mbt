@@ -16,7 +16,7 @@
 /// // Vector operations
 /// let sum = v2 + v3
 /// let scaled = v2.left_scale(2.0)
-/// 
+///
 /// inspect(sum.to_string(), content="|1, 3, 5|")
 /// inspect(scaled.to_string(), content="|0, 2, 4|")
 /// ```
