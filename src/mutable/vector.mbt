@@ -402,7 +402,7 @@ pub fn[A, B] Vector::map(self : Vector[A], f : (A) -> B) -> Vector[B] {
 /// ```
 ///
 pub fn[A] Vector::map_inplace(self : Vector[A], f : (A) -> A) -> Unit {
-  self.0.map_inplace(f)
+  self.0.map_in_place(f)
 }
 
 ///|
